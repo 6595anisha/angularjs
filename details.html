@@ -1,0 +1,24 @@
+<div class="row">
+<h1 style="text-align: center">{{person.name}}</h1>
+<div class="col-xs-4"><img class="img-responsive" src="{{person.img}}"></div>  
+<div class="col-xs-8"><button class="btn" ng-click="showDetails = ! showDetails" style="display:inline">Send Message</button>
+    <div  ng-class="{ 'hidden': ! showDetails }">
+      <textarea id="myArea" rows="4" cols="50"></textarea><button class="btn" ng-click=send()>Send</button>
+    </div>
+    <div class="rating"><i ng-repeat="i in convert(full) track by $index" class="fas fa-heart" style="color:#C0B283;"></i><i ng-repeat="i in convert(empty) track by $index" class="far fa-heart" style="color:#C0B283;"></i></div>
+    <p><i class="fas fa-quote-left" style="size:30px;"></i>{{person.Description}}<i class="fas fa-quote-right" style="size:30px;"></i></p>
+</div>
+</div>
+<div class="row">
+<div class="col-md-12">
+  <div class="table-responsive">
+    <table class="table borderless" align="center">
+      <thead><tr><th>Likes</th><th>Dislikes</th></tr></thead>
+      <tr ng-repeat="i in convert(totalRows) track by $index">
+    	  <td><i class="fas fa-anchor"></i> {{person.Likes[$index]}}</td>
+    	  <td><i class="fas fa-bomb"></i> {{person.Dislikes[$index]}}</td>
+      </tr>
+    </table>
+  </div>
+</div>
+</div>

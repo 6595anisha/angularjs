@@ -1,0 +1,58 @@
+/* Put your css in here */
+
+.container{
+  margin:0px;
+}
+.list-group{
+  max-width:250px;
+  
+}
+.list-group-item{
+  padding:30px;
+  border:#DCD0C0 solid 3px;
+}
+.list-group-item:hover{
+  background-color:#c0b283;
+}
+textarea{
+  margin:10px;
+  border-radius:10px;
+}
+
+.btn{
+  background-color:#DCD0C0;
+}
+body{
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+p{
+  padding-top:10px;
+}
+
+.navbar-nav{
+  margin:0px;
+}
+
+.search-input{
+  height:40px;
+}
+
+.rating{
+  margin-top:20px;
+  i{
+    font-size:30px;
+    padding:1px;
+  }
+}
+
+.table{
+  margin-top:40px;
+  padding:10px;
+  border: #dcd0c0 1px solid;
+  table-layout:fixed;
+}
+tr:hover{
+  background-color:#e8e1d7;
+}
+
+

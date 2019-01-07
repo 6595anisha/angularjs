@@ -1,0 +1,5 @@
+<ul class="list-group">
+	<li class="list-group-item" ng-click="viewPerson(list)" ng-repeat="list in name.people | filter:$parent.search" >
+		{{list.name}} <i class="fas fa-angle-right" style="float:right;"></i>
+	</li>
+</ul>
